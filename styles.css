@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #2d3748;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+}
+
+.score {
+    background: #f7fafc;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.score p {
+    color: #4a5568;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.score span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.game-area {
+    margin-bottom: 2rem;
+}
+
+.result {
+    font-size: 1.25rem;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+    min-height: 2rem;
+    transition: all 0.3s ease;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.choice {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.choice:hover {
+    background: #f7fafc;
+    transform: translateY(-5px);
+}
+
+.choice-icon {
+    font-size: 2.5rem;
+}
+
+.choice-text {
+    color: #4a5568;
+    font-size: 1rem;
+}
+
+.moves {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.move-display {
+    text-align: center;
+}
+
+.move-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.versus {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.reset-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+    background: #764ba2;
+    transform: translateY(-2px);
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.winner {
+    animation: bounce 0.5s ease;
+    color: #48bb78;
+}
+
+.loser {
+    color: #e53e3e;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .score-board {
+        gap: 2rem;
+    }
+    
+    .choice-icon {
+        font-size: 2rem;
+    }
+    
+    .moves {
+        gap: 1rem;
+    }
+} 

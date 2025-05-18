@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="score-board">
+            <div class="score">
+                <p>Player</p>
+                <span id="player-score">0</span>
+            </div>
+            <div class="score">
+                <p>Computer</p>
+                <span id="computer-score">0</span>
+            </div>
+        </div>
+        
+        <div class="game-area">
+            <div id="result" class="result">Choose your move!</div>
+            <div class="choices">
+                <button class="choice" data-choice="rock">
+                    <span class="choice-icon">✊</span>
+                    <span class="choice-text">Rock</span>
+                </button>
+                <button class="choice" data-choice="paper">
+                    <span class="choice-icon">✋</span>
+                    <span class="choice-text">Paper</span>
+                </button>
+                <button class="choice" data-choice="scissors">
+                    <span class="choice-icon">✌️</span>
+                    <span class="choice-text">Scissors</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="moves">
+            <div class="move-display">
+                <div id="player-move" class="move-icon">❔</div>
+                <p>Your Move</p>
+            </div>
+            <div class="versus">VS</div>
+            <div class="move-display">
+                <div id="computer-move" class="move-icon">❔</div>
+                <p>Computer's Move</p>
+            </div>
+        </div>
+        
+        <button id="reset" class="reset-btn">Reset Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
